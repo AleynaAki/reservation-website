@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <script src="script.js"></script>
+    <title>Title</title>
+</head>
+
+<body>
+    <nav>
+        <div class="website-title">
+            <img src="" alt=""/>
+            <a class="logo-text" href="#">Title</a>
+        </div>
+
+        <div class = "account">
+            <a class="login" href="#">Giriş</a>
+        </div>
+    </nav>
+
+    <div class="categories-container">
+
+        <div class="top-res-text-container">
+            <p class = "reservation-text">Rezervasyon Yap</p>
+        </div>
+
+        <div class="options-container">
+                <button class="button">
+                    <a class="option">Konaklama</a>
+                </button>
+                <button class="button">
+                    <a class="option">Restoran</a>
+                </button>
+                <button class="button">
+                    <a class="option">Etkinlikler</a>
+                </button>
+                <button class="button">
+                    <a class="option">Ulaşım</a>
+                </button>
+        </div>
+
+        <div class="end-res-text-container">
+            <p class = "reservation-text">Gez ve Eğlen</p>
+        </div>
+
+        <div class="search-container">
+            <p class="search-header">Hızlı arama</p>
+
+            <form class="search-form">
+
+                <div class="search-box">
+                    <input class="search-input" type="search" placeholder="Gideceğiniz yer...">
+                </div>
+
+                <div class="date-container">
+                    <div class="dropdown">
+                        <button type="button">Giriş</button>
+
+                        <div class="dropdown-content">
+                            <label for="checkin" type="button">Giriş Tarihi</label>
+                            <input type="date" id="checkin" name="checkin" required>
+
+                            <label for="checkout" type="button">Çıkış Tarihi</label>
+                            <input type="date" id="checkout" name="checkout" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="guest-container">
+                    <div class="dropdown" id="guestDropdownContainer">
+                        <button id="guestButton" type="button">Misafirler</button>
+
+                        <div class="dropdown-content" id="guestDropdown">
+
+                            <div class="number-input">
+                                <label for="adults">Yetişkin Sayısı</label>
+                                <button type="button" onclick="decrement('adults')">-</button>
+                                <input type="number" id="adults" name="adults" min="1" value="1" readonly required>
+                                <button type="button" onclick="increment('adults')">+</button>
+                            </div>
+
+
+                            <div class="number-input">
+                                <label for="children">Çocuk Sayısı:</label>
+                                <button type="button" onclick="decrement('children')">-</button>
+                                <input type="number" id="children" name="children" min="0" value="0" readonly required>
+                                <button type="button" onclick="increment('children')">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit">Ara</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <div class="content-container">
+        
+        <div class="content-header-1">
+            <p class="con-hd-txt">Popüler oteller ve diğer konaklama alanlarını keşfet</p>
+        </div>
+
+        <div class="list-container">
+
+            <ul class="property-list-container">
+
+                <li class="property-item">
+                     <a href="#">
+                        <div class="property-image"></div>
+
+                        <h1 class="property-name">otelin adı</h1>
+                        <div class="property-info">
+                            <p class="property-score">puanı</p>
+                            <p class="property-location">yeri</p>
+                        </div>
+                     </a>       
+                </li>
+
+                <li class="property-item">
+                    <a href="#">
+                       <div class="property-image"></div>
+
+                       <h1 class="property-name">otelin adı</h1>
+                       <div class="property-info">
+                           <p class="property-score">puanı</p>
+                           <p class="property-location">yeri</p>
+                       </div>
+                    </a>       
+               </li>
+
+               <li class="property-item">
+                    <a href="#">
+                    <div class="property-image"></div>
+
+                    <h1 class="property-name">otelin adı</h1>
+                    <div class="property-info">
+                        <p class="property-score">puanı</p>
+                        <p class="property-location">yeri</p>
+                    </div>
+                    </a>       
+                </li>
+
+               <li class="property-item-end">
+                    <a href="#">
+                    <div class="property-image"></div>
+
+                    <h1 class="property-name">otelin adı</h1>
+                    <div class="property-info">
+                        <p class="property-score">puanı</p>
+                        <p class="property-location">yeri</p>
+                    </div>
+                    </a>       
+                </li>
+            </ul>
+
+            <button class="more-button"><a href="#">Daha Fazla</a></button>
+
+        </div>
+    </div> 
+
+    <div class="content-container">
+        
+        <div class="content-header-1">
+            <p class="con-hd-txt">Popüler oteller ve diğer konaklama alanlarını keşfet</p>
+        </div>
+
+        <div class="list-container">
+
+            <ul class="property-list-container">
+
+                <li class="property-item">
+                     <a href="#">
+                        <div class="property-image"></div>
+
+                        <h1 class="property-name">otelin adı</h1>
+                        <div class="property-info">
+                            <p class="property-score">puanı</p>
+                            <p class="property-location">yeri</p>
+                        </div>
+                     </a>       
+                </li>
+
+                <li class="property-item">
+                    <a href="#">
+                       <div class="property-image"></div>
+
+                       <h1 class="property-name">otelin adı</h1>
+                       <div class="property-info">
+                           <p class="property-score">puanı</p>
+                           <p class="property-location">yeri</p>
+                       </div>
+                    </a>       
+               </li>
+
+               <li class="property-item">
+                    <a href="#">
+                    <div class="property-image"></div>
+
+                    <h1 class="property-name">otelin adı</h1>
+                    <div class="property-info">
+                        <p class="property-score">puanı</p>
+                        <p class="property-location">yeri</p>
+                    </div>
+                    </a>       
+                </li>
+
+               <li class="property-item-end">
+                    <a href="#">
+                    <div class="property-image"></div>
+
+                    <h1 class="property-name">otelin adı</h1>
+                    <div class="property-info">
+                        <p class="property-score">puanı</p>
+                        <p class="property-location">yeri</p>
+                    </div>
+                    </a>       
+                </li>
+            </ul>
+
+            <button class="more-button"><a href="#">Daha Fazla</a></button>
+
+        </div>
+    </div>
+    
+</body>
+
+</html>
